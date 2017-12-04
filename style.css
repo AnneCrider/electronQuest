@@ -1,0 +1,17 @@
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: rgb(240, 224, 224) url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+    padding: 0;
+    text-align: center;
+	}
+p { 
+    font: italic normal 2em;
+	margin-top: 0; 
+    text-align: center;
+    letter-spacing: 1px; 
+	margin-bottom: 0; 
+    color: #7D775C;
+	}

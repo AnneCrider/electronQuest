@@ -4,7 +4,12 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:osx": "electron-packager . --out=dist --overwrite --platform=darwin --arch=x64",
+    "build:win64": "electron-packager . --out=dist --overwrite --platform=win32 --arch=x64",
+    "build:arm": "electron-packager . --out=dist --overwrite --platform=linux --arch=armv7l",
+    "build:linux": "electron-packager . --out=dist --overwrite --platform=linux --arch=x64",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +22,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "devtron": "^1.4.0",
     "electron": "~1.7.8"
+  },
+  "dependencies": {
+    "electron-packager": "^10.1.0"
   }
 }
